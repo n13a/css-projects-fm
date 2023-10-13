@@ -80,4 +80,44 @@ h2,
 .h2 {
   font-size: var(--h2);
   line-height: 1.1;
+  margin-bottom: var(--h3);
+}
+
+h3,
+.h3 {
+  font-size: var(--h3);
+  line-height: 1.2;
+  margin-bottom: var(--h4);
+}
+img {
+  /* Don't be any bigger than the picture is. */
+  /* max-width will ensure that it doesn't stretch beyond inherent width of the
+   * image. unlike width which is relative to the images container */
+  /* max-width is based on the image's properties and not the element's
+   * properties */
+  max-width: 100%;
+  border-radius: var(--radius);
+}
+
+figure {
+  /* margin is outside the border, inside of the border is padding */
+  margin: 0;
+}
+
+a {
+  color: var(--green);
+}
+
+a:hover {
+  text-decoration: none;
+}
+header {
+  background-color: var(--coffee);
+  padding: 1rem 0;
+  border-bottom: 20px double var(--tan);
+}
+
+header h1 {
+  color: var(--vanilla);
+  margin-bottom: 0;
 }
