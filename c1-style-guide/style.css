@@ -1,0 +1,83 @@
+:root {
+  /* colors */
+  --white: #ffffff;
+  --green: #333d29;
+  --coffee: #43281c;
+  --vanilla: #f1e3d3;
+  --lemon: #fbf2c0;
+  --mocha: #7f4f24;
+  --tan: #ddb892;
+  --blue: #3e80b6;
+
+  /* fonts */
+  --decorative: "Montserrat", sans-serif;
+  --sans: "Open Sans", sans-serif;
+
+  /* font scale */
+  --base-size: 1.2rem;
+  --scale: 1.25;
+  --xl: calc(var(--lg) * var(--scale));
+  --lg: calc(var(--h1) * var(--scale));
+  --h1: calc(var(--h2) * var(--scale));
+  --h2: calc(var(--h3) * var(--scale));
+  --h3: calc(var(--h4) * var(--scale));
+  --h4: calc(var(--h5) * var(--scale));
+  --h5: calc(var(--h6) * var(--scale));
+  --h6: var(--base-size);
+  --sm: calc(var(--base-size) / var(--scale));
+  /* Generate sizes, element styles, and classes for h1, h2, h3, body. Generate
+   * sizes for h4-h6, a small size, and a large size
+   * (classes not needed, just variables).
+  See https://codepen.io/jen4web/pen/KKGpKBM as an example */
+
+  /* other variables */
+  --radius: 5px;
+}
+
+/* add border box sizing to the page */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* using the above variables and the HTML specified above, write CSS to style
+ * headings, text, links, images, figures, etc. */
+
+body {
+  font-family: var(--sans);
+  /*
+   * Ensure you always use line-height without units.
+   */
+  line-height: 1.5;
+  background-color: var(--vanilla);
+  color: var(--coffee);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+  font-family: var(--decorative);
+  font-weight: 400;
+  margin: 0;
+}
+
+h1,
+.h1 {
+  font-size: var(--h1);
+  line-height: 1;
+  margin-bottom: var(--h2);
+}
+h2,
+.h2 {
+  font-size: var(--h2);
+  line-height: 1.1;
+}
