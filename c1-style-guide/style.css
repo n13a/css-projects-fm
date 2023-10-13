@@ -121,3 +121,56 @@ header h1 {
   color: var(--vanilla);
   margin-bottom: 0;
 }
+
+.fancy-text {
+  background: linear-gradient(135deg, var(--mocha) 0%, var(--tan) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 35%;
+  background-position: 0 90%;
+}
+
+.colors > * {
+  display: inline-block;
+  width: 5rem;
+  height: 4rem;
+  text-align: center;
+  padding: 1rem 0;
+  margin: 1rem;
+}
+
+.white {
+  background-color: var(--white);
+}
+
+.green {
+  background-color: var(--green);
+  color: var(--vanilla);
+}
+
+.coffee {
+  background-color: var(--coffee);
+  color: var(--vanilla);
+}
+
+.vanilla {
+  border: 3px solid var(--coffee);
+  background-color: var(--vanilla);
+}
+
+.lemon {
+  background-color: var(--lemon);
+}
+
+.mocha {
+  background-color: var(--mocha);
+  color: var(--vanilla);
+}
+
+.tan {
+  background-color: var(--tan);
+}
+
+.blue {
+  background-color: var(--blue);
+  color: var(--vanilla);
+}
